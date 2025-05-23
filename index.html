@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Aconchego - A melhor cafeteria da cidade</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1445116572660-236099ec97a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .menu-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .transition-slow {
+            transition: all 0.5s ease;
+        }
+    </style>
+</head>
+<body class="font-sans bg-amber-50">
+    <!-- Header/Navbar -->
+    <header class="bg-amber-900 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-mug-hot text-2xl text-amber-200"></i>
+                <h1 class="text-2xl font-bold">Estação  Café</h1>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#home" class="hover:text-amber-200 transition-slow">Início</a>
+                <a href="#menu" class="hover:text-amber-200 transition-slow">Cardápio</a>
+                <a href="#about" class="hover:text-amber-200 transition-slow">Sobre</a>
+                <a href="#contact" class="hover:text-amber-200 transition-slow">Contato</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-amber-800 px-4 py-2">
+            <div class="flex flex-col space-y-3">
+                <a href="#home" class="hover:text-amber-200 transition-slow">Início</a>
+                <a href="#menu" class="hover:text-amber-200 transition-slow">Cardápio</a>
+                <a href="#about" class="hover:text-amber-200 transition-slow">Sobre</a>
+                <a href="#contact" class="hover:text-amber-200 transition-slow">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero h-screen flex items-center justify-center text-center text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-6xl font-bold mb-4">Bem-vindo ao Café Aconchego</h2>
+            <p class="text-xl md:text-2xl mb-8">O melhor café da cidade, feito com amor e ingredientes selecionados</p>
+            <a href="#menu" class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-6 rounded-full transition-slow inline-block">
+                Ver Cardápio
+            </a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-amber-900">Nosso Cardápio</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Café Expresso -->
+                <div class="menu-item bg-white rounded-lg overflow-hidden shadow-md transition-slow">
+                    <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" 
+                         alt="Café Expresso" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-amber-900">Café Expresso</h3>
+                        <p class="text-gray-600 mb-4">Um shot intenso de café, perfeito para quem gosta de sabores fortes.</p>
+                        <p class="text-amber-700 font-bold">R$ 6,50</p>
+                    </div>
+                </div>
+                
+                <!-- Cappuccino -->
+                <div class="menu-item bg-white rounded-lg overflow-hidden shadow-md transition-slow">
+                    <img src="https://sachefmio.blob.core.windows.net/fotos/cappuccino-de-cevada-nutella-200ml-8a03cff8-f806-4ad4-90ea-caa2808eb240.jpg" 
+                         alt="Cappuccino" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-amber-900">Cappuccino</h3>
+                        <p class="text-gray-600 mb-4">Café espresso com leite vaporizado e uma generosa camada de espuma.</p>
+                        <p class="text-amber-700 font-bold">R$ 12,00</p>
+                    </div>
+                </div>
+                
+                <!-- Latte -->
+                <div class="menu-item bg-white rounded-lg overflow-hidden shadow-md transition-slow">
+                    <img src="https://images.unsplash.com/photo-1568649929103-28ffbefaca1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Latte" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-amber-900">Latte</h3>
+                        <p class="text-gray-600 mb-4">Mais suave que o cappuccino, com mais leite e uma fina camada de espuma.</p>
+                        <p class="text-amber-700 font-bold">R$ 14,00</p>
+                    </div>
+                </div>
+                
+                <!-- Croissant -->
+                <div class="menu-item bg-white rounded-lg overflow-hidden shadow-md transition-slow">
+                    <img src="https://images.unsplash.com/photo-1620146344904-097a0002d797?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Croissant" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-amber-900">Croissant</h3>
+                        <p class="text-gray-600 mb-4">Folhado francês tradicional, perfeito para acompanhar seu café.</p>
+                        <p class="text-amber-700 font-bold">R$ 9,00</p>
+                    </div>
+                </div>
+                
+                <!-- Bolo de Chocolate -->
+                <div class="menu-item bg-white rounded-lg overflow-hidden shadow-md transition-slow">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1389&q=80" 
+                         alt="Bolo de Chocolate" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-amber-900">Bolo de Chocolate</h3>
+                        <p class="text-gray-600 mb-4">Delicioso bolo de chocolate feito com cacau 70%.</p>
+                        <p class="text-amber-700 font-bold">R$ 15,00 (fatia)</p>
+                    </div>
+                </div>
+                
+                <!-- Chá Especial -->
+                <div class="menu-item bg-white rounded-lg overflow-hidden shadow-md transition-slow">
+                    <img src="https://blog.cafesantamonica.com.br/wp-content/uploads/2024/01/paisagem-casacara_ambientada2.png" 
+                         alt="Chá Especial" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-amber-900">Chá Especial</h3>
+                        <p class="text-gray-600 mb-4">Seleção de chás premium de diversas partes do mundo.</p>
+                        <p class="text-amber-700 font-bold">R$ 10,00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-amber-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" 
+                         alt="Interior da Cafeteria" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6 text-amber-900">Nossa História</h2>
+                    <p class="text-gray-700 mb-4">
+                        O Café Aconchego nasceu em 2010 com o sonho de trazer para nossa cidade um espaço acolhedor onde as pessoas pudessem desfrutar de cafés especiais e momentos de tranquilidade.
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        Trabalhamos diretamente com pequenos produtores de café para garantir a melhor qualidade em cada xícara que servimos. Nossos grãos são torrados artesanalmente e preparados com cuidado por nossos baristas treinados.
+                    </p>
+                    <p class="text-gray-700">
+                        Além do café, todos os nossos alimentos são preparados diariamente com ingredientes frescos e selecionados.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-amber-900 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Entre em Contato</h2>
+            
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h3 class="text-xl font-bold mb-4">Informações</h3>
+                    <div class="mb-4 flex items-start">
+                        <i class="fas fa-map-marker-alt mt-1 mr-3 text-amber-200"></i>
+                        <p>Rua Itupava, 123 - Centro, Curutiba - PR</p>
+                    </div>
+                    <div class="mb-4 flex items-center">
+                        <i class="fas fa-phone-alt mr-3 text-amber-200"></i>
+                        <p>(41) 98765-4321</p>
+                    </div>
+                    <div class="mb-4 flex items-center">
+                        <i class="fas fa-envelope mr-3 text-amber-200"></i>
+                        <p>contato@cafeaconchego.com.br</p>
+                    </div>
+                    <div class="mb-4 flex items-center">
+                        <i class="fas fa-clock mr-3 text-amber-200"></i>
+                        <p>Segunda a Sexta: 7h às 20h<br>Sábado e Domingo: 8h às 18h</p>
+                    </div>
+                    
+                    <h3 class="text-xl font-bold mt-8 mb-4">Nos siga</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-amber-200 transition-slow"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-amber-200 transition-slow"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-amber-200 transition-slow"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <h3 class="text-xl font-bold mb-4">Envie uma mensagem</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block mb-1">Nome</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 rounded text-gray-800">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-1">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 rounded text-gray-800">
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-1">Mensagem</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 rounded text-gray-800"></textarea>
+                        </div>
+                        <button type="submit" class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-2 px-6 rounded transition-slow">
+                            Enviar
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-amber-950 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2023 Café Aconchego. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-amber-700 text-white p-3 rounded-full shadow-lg hidden transition-slow">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth Scrolling for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - 70,
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+        // Back to Top Button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('hidden');
+            } else {
+                backToTopButton.classList.add('hidden');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
