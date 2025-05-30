@@ -24,7 +24,7 @@
     </style>
 </head>
 <body class="font-sans bg-amber-50">
-    <!-- Header/Navbar -->
+    
     <header class="bg-amber-900 text-white shadow-lg sticky top-0 z-50">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center space-x-2">
@@ -42,7 +42,7 @@
             </button>
         </div>
         
-        <!-- Mobile Menu -->
+        
         <div id="mobile-menu" class="hidden md:hidden bg-amber-800 px-4 py-2">
             <div class="flex flex-col space-y-3">
                 <a href="#home" class="hover:text-amber-200 transition-slow">Início</a>
@@ -53,7 +53,7 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    
     <section id="home" class="hero h-screen flex items-center justify-center text-center text-white">
         <div class="container mx-auto px-4">
             <h2 class="text-4xl md:text-6xl font-bold mb-4">Bem-vindo a Estação Café</h2>
@@ -64,13 +64,13 @@
         </div>
     </section>
 
-    <!-- Menu Section -->
+    
     <section id="menu" class="py-16 bg-white">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12 text-amber-900">Nosso Cardápio</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Café Expresso -->
+                
                 <div class="menu-item bg-white rounded-lg overflow-hidden shadow-md transition-slow">
                     <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" 
                          alt="Café Expresso" class="w-full h-48 object-cover">
@@ -81,7 +81,7 @@
                     </div>
                 </div>
                 
-                <!-- Cappuccino -->
+             
                 <div class="menu-item bg-white rounded-lg overflow-hidden shadow-md transition-slow">
                     <img src="https://sachefmio.blob.core.windows.net/fotos/cappuccino-de-cevada-nutella-200ml-8a03cff8-f806-4ad4-90ea-caa2808eb240.jpg" 
                          alt="Cappuccino" class="w-full h-48 object-cover">
@@ -91,8 +91,7 @@
                         <p class="text-amber-700 font-bold">R$ 12,00</p>
                     </div>
                 </div>
-                
-                <!-- Latte -->
+             
                 <div class="menu-item bg-white rounded-lg overflow-hidden shadow-md transition-slow">
                     <img src="https://images.unsplash.com/photo-1568649929103-28ffbefaca1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
                          alt="Latte" class="w-full h-48 object-cover">
@@ -103,7 +102,7 @@
                     </div>
                 </div>
                 
-                <!-- Croissant -->
+                
                 <div class="menu-item bg-white rounded-lg overflow-hidden shadow-md transition-slow">
                     <img src="https://images.unsplash.com/photo-1620146344904-097a0002d797?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
                          alt="Croissant" class="w-full h-48 object-cover">
@@ -114,7 +113,7 @@
                     </div>
                 </div>
                 
-                <!-- Bolo de Chocolate -->
+                
                 <div class="menu-item bg-white rounded-lg overflow-hidden shadow-md transition-slow">
                     <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1389&q=80" 
                          alt="Bolo de Chocolate" class="w-full h-48 object-cover">
@@ -125,7 +124,7 @@
                     </div>
                 </div>
                 
-                <!-- Chá Especial -->
+              
                 <div class="menu-item bg-white rounded-lg overflow-hidden shadow-md transition-slow">
                     <img src="https://blog.cafesantamonica.com.br/wp-content/uploads/2024/01/paisagem-casacara_ambientada2.png" 
                          alt="Chá Especial" class="w-full h-48 object-cover">
@@ -139,7 +138,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="py-16 bg-amber-100">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row items-center">
@@ -163,7 +161,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="py-16 bg-amber-900 text-white">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12">Entre em Contato</h2>
@@ -220,20 +217,18 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-amber-950 text-white py-6">
         <div class="container mx-auto px-4 text-center">
             <p>&copy; 2023 Estação Café. Todos os direitos reservados.</p>
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
     <button id="back-to-top" class="fixed bottom-6 right-6 bg-amber-700 text-white p-3 rounded-full shadow-lg hidden transition-slow">
         <i class="fas fa-arrow-up"></i>
     </button>
 
     <script>
-        // Mobile Menu Toggle
+        
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
         
@@ -241,7 +236,6 @@
             mobileMenu.classList.toggle('hidden');
         });
         
-        // Smooth Scrolling for Anchor Links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -254,12 +248,10 @@
                     behavior: 'smooth'
                 });
                 
-                // Close mobile menu if open
                 mobileMenu.classList.add('hidden');
             });
         });
         
-        // Back to Top Button
         const backToTopButton = document.getElementById('back-to-top');
         
         window.addEventListener('scroll', () => {
